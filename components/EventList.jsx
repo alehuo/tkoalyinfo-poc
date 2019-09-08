@@ -28,7 +28,7 @@ const EventList = ({ initialEvents, classes }) => {
   return (
     <List dense={true}>
       {events.map(({ name, starts }) => (
-        <ListItem>
+        <ListItem key={name}>
           <ListItemText style={{ fontSize: "20px" }} primary={name} />
           <Chip
             className={classes.chip}
